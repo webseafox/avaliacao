@@ -70,4 +70,44 @@ E o ingress, libera a entrada das solicitadas
 
 Pode chamar a url (http://hello-world.local)
 
+--------------------------------------------------------------------------------------------
+
+## 9 - Comandos Docker  
+
+docker build -t hello-world-app . ( rodar o comando no mesmo diretorio do clone )
+
+Validei rodando o container 
+
+docker run -p 3000:3000 hello-word-app 
+
+com o curl realizei o get 
+
+% curl http://localhost:3000
+
+Hello World%  
+
+--------------------------------------------------------------------------------------------
+
+## 10 - Comandos K8S  ( De preferencia para LENS e K9S )
+
+Para pegar os recursos pode usar os seguintes comando 
+
+
+kubectl get all -a
+
+kubectl get all resources 
+
+kubectl get all pods 
+
+--------------------------------------------------------------------------------------------
+
+Recurso de CPU pode usar 
+
+
+
+kubectl top pod 
+
+kubectl top node 
+
+--------------------------------------------------------------------------------------------
 
